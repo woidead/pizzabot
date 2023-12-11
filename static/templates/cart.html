@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Корзина</title>
+</head>
+<body>
+    <h1>Корзина</h1>
+    <ul>
+        {% for item in cart_items %}
+            <li>{{ item.product.name }} - {{ item.quantity }} шт. ({{ item.total_price }} руб.)</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
